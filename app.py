@@ -48,7 +48,7 @@ with col2:
     f3 = st.number_input("Petal length in cms", value=0.0)
     f4 = st.number_input("Petal width in cms", value=0.0)
 
- Prediction button
+# Prediction button
 
 if st.button(" Predict"):
     features = np.array([[f1, f2, f3, f4]])
