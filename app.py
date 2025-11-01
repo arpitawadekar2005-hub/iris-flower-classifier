@@ -45,7 +45,7 @@ with col1:
     f1 = st.number_input("Sepal length in cms", value=0.0)
     f2 = st.number_input("Sepal width in cms", value=0.0)
 with col2:
-   f3 = st.number_input("Petal length in cms", value=0.0)
+    f3 = st.number_input("Petal length in cms", value=0.0)
     f4 = st.number_input("Petal width in cms", value=0.0)
 
  Prediction button
