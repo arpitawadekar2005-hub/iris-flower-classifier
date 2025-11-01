@@ -41,17 +41,15 @@ st.markdown("### Enter the Flower Features")
 
 # Input fields in columns
 col1, col2 = st.columns(2)
-#with col1:
-#    f1 = st.number_input("Sepal length in cms", value=0.0)
-#    f2 = st.number_input("Sepal width in cms", value=0.0)
-#with col2:
-#    f3 = st.number_input("Petal length in cms", value=0.0)
-#    f4 = st.number_input("Petal width in cms", value=0.0)
+with col1:
+    f1 = st.number_input("Sepal length in cms", value=0.0)
+    f2 = st.number_input("Sepal width in cms", value=0.0)
+with col2:
+   f3 = st.number_input("Petal length in cms", value=0.0)
+    f4 = st.number_input("Petal width in cms", value=0.0)
 
-# Prediction button
-img = cv2.imread("test/cat3.jpg")
-img = cv2.resize(img, (64, 64))
-features = img.flatten().reshape(1, -1)
+ Prediction button
+
 if st.button(" Predict"):
     features = np.array([[f1, f2, f3, f4]])
     prediction = model.predict(features)
