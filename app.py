@@ -36,8 +36,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # App Title
-st.title("🤖 ML Prediction App")
-st.markdown("### Enter the input values below to get predictions.")
+st.title("IRIS CLASSIFIER")
+st.markdown("### Enter the Flower Features")
 
 # Input fields in columns
 col1, col2 = st.columns(2)
@@ -49,9 +49,9 @@ with col2:
     f4 = st.number_input("Petal width in cms", value=0.0)
 
 # Prediction button
-if st.button("🔍 Predict"):
+if st.button(" Predict"):
     features = np.array([[f1, f2, f3, f4]])
     prediction = model.predict(features)
-    st.success(f"🎯 Predicted Class: {prediction[0]}")
+    st.success(f" Predicted Class: {prediction[0]}")
 
 
